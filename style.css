@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+}
+
+header {
+  background: #343a40;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+#results {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin: 0;
+  color: #333;
+}
+
+/* Responsive */
+@media (min-width: 700px) {
+  #results {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+footer {
+  background: #343a40;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  background: #343a40;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+  width: 100%;
+}
+/* Ensure the whole page uses flexbox for proper vertical centering */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full viewport height */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Keep main content flexible */
+#results {
+  flex: 1; /* takes remaining space */
+}
+
+/* Footer styles */
+footer {
+  background: #343a40;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  width: 100%;
+}
