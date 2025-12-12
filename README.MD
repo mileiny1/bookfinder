@@ -20,7 +20,7 @@
 2. Ensure `books.xml` is readable by the server.
 3. Access the site URL (e.g., `https://yourhost.example/index.html`).
 
-## Reflection (copy this into your assignment post)
+## Reflection 
 **What I built**  
 A Dynamic Book Finder that reads a local `books.xml` file, parses it on the server using PHP (`simplexml_load_file()`), and serves filtered results to the front-end via AJAX (`fetch`). The UI allows searching by title/author, filtering by genre and year, and updates results without reloading the page.
 
